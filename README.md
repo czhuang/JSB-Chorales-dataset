@@ -1,7 +1,7 @@
 # JSB-Chorales-dataset
 Dataset for JSB Chorales at different temporal resolutions, with train, validation, test split from [Boulanger-Lewandowski (2012)][nicolas-data].
 
-Three temporal resolutions are provided: quarter, 8th, 16th. They are created by choosing the pitch that is heard on the specified temporal grid.
+Three temporal resolutions are provided: quarter, 8th, 16th. These "quantizations" are created by retaining the pitches heard on the specified temporal grid.
 
 ## Example usage:
 ```python
