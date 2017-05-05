@@ -14,14 +14,6 @@ with open('jsb-chorales-16th.pkl', 'wb') as p:
 
 From Boulanger-Lewandowski (2012): "This will load a dictionary with 'train', 'valid' and 'test' keys, with the corresponding values being a list of sequences. Each sequence is itself a list of time steps, and each time step is a list of the non-zero elements in the piano-roll at this instant (in MIDI note numbers, between 21 and 108 inclusive)".
 
-We also provide a voice-separated version, where each time step always consists of four entries that corresponds to the four voices SATB. For example, the first MIDI number is always from the Soprano voice, second from Alto, etc.  When there is a rest in a voice, a np.nan entry is used.
-
-## To load the voice-separated data:
-```python
-import numpy as np
-data = np.load("jsb-chorales-16th-separated.npz")
-```
-
 ## References:
 Boulanger-Lewandowski, N., Vincent, P., & Bengio, Y. (2012). Modeling Temporal Dependencies in High-Dimensional Sequences: Application to Polyphonic Music Generation and Transcription. Proceedings of the 29th International Conference on Machine Learning (ICML-12), 1159–1166.
 
