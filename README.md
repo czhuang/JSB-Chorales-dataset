@@ -8,7 +8,7 @@ This dataset currently does not encode fermatas and also does not distinguish be
 ## To load the data:
 ```python
 import cPickle as pickle
-with open('jsb-chorales-16th.pkl', 'wb') as p:
+with open('jsb-chorales-16th.pkl', 'rb') as p:
     data = pickle.load(p)
 ```
 
