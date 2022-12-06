@@ -7,20 +7,12 @@ This dataset currently does not encode fermatas and also does not distinguish be
 
 ## To load the data:
 
-In Python 2:
+In Python 2 or Python 3:
 
 ```python
 import cPickle as pickle
 with open('jsb-chorales-16th.pkl', 'rb') as p:
     data = pickle.load(p)
-```
-
-In Python 3:
-
-```python
-import pickle
-with open('jsb-chorales-16th.pkl', 'rb') as p:
-    data = pickle.load(p, encoding="latin1")
 ```
 
 From Boulanger-Lewandowski (2012): "This will load a dictionary with 'train', 'valid' and 'test' keys, with the corresponding values being a list of sequences. Each sequence is itself a list of time steps, and each time step is a list of the non-zero elements in the piano-roll at this instant (in MIDI note numbers, between 21 and 108 inclusive)".
